@@ -45,6 +45,6 @@ test('проверка метода toArray', () => {
     name: 'Di', type: 'Daemon', health: 100, level: 1, attack: 10, defence: 40,
   };
   team.addAll(bowerman, zombie, daemon);
-  team.toArray();
-  expect(team.members).toEqual([bowerman, zombie, daemon]);
+  const received = team.toArray();
+  expect(received).toEqual([bowerman, zombie, daemon]);
 });
